@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#0b0f14">
+    <title>Para Nós 💐</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Um cantinho romântico com buquê e perguntinhas para nós dois.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <div id="bg-effects" aria-hidden="true"></div>
+
+    <main class="container">
+      <header class="hero">
+        <h1 class="title">Para você 🌹</h1>
+        <p class="subtitle">Um cantinho romântico, só nosso.</p>
+      </header>
+
+      <section class="bouquet-wrap" aria-label="Buquê de rosas vermelhas">
+        <!-- SVG Buquê: rosas vermelhas, laço e folhas. Animação suave no conjunto -->
+        <svg class="bouquet" width="420" height="520" viewBox="0 0 420 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+          <title>Buquê de Rosas Vermelhas</title>
+          <g class="bouquet-sway">
+            <!-- Hastes -->
+            <g filter="url(#glow-green)">
+              <path d="M210 210 C210 320, 180 370, 200 500" stroke="#14c27a" stroke-width="4"/>
+              <path d="M210 210 C210 320, 240 370, 220 500" stroke="#14c27a" stroke-width="4"/>
+              <path d="M210 210 C210 320, 200 370, 210 500" stroke="#14c27a" stroke-width="4"/>
+              <path d="M210 210 C210 270, 160 305, 170 390" stroke="#14c27a" stroke-width="3" opacity=".8"/>
+              <path d="M210 210 C210 270, 260 305, 250 390" stroke="#14c27a" stroke-width="3" opacity=".8"/>
+            </g>
+
+            <!-- Folhas e grama estilo neon -->
+            <g fill="url(#leafGrad)" opacity="0.95">
+              <path d="M185 265 C165 250, 150 240, 145 220 C170 228, 190 240, 200 255 Z"/>
+              <path d="M235 265 C255 250, 270 240, 275 220 C250 228, 230 240, 220 255 Z"/>
+              <path d="M205 305 C185 298, 165 292, 155 275 C178 280, 198 288, 208 298 Z"/>
+              <path d="M215 305 C235 298, 255 292, 265 275 C242 280, 222 288, 212 298 Z"/>
+              <!-- Grama lateral -->
+              <path d="M80 330 C90 290, 110 260, 130 230 C120 270, 100 310, 90 350 Z"/>
+              <path d="M330 330 C320 290, 300 260, 280 230 C290 270, 310 310, 320 350 Z"/>
+            </g>
+
+            <!-- Flores com múltiplas camadas de pétalas -->
+            <g filter="url(#glow-red)">
+              <!-- Flor central (maior) -->
+              <g transform="translate(180,100)" class="rose rose-center">
+                <!-- Camada externa de pétalas -->
+                <g fill="url(#roseGrad)" opacity="0.9">
+                  <ellipse cx="30" cy="15" rx="28" ry="16" transform="rotate(-15 30 15)"/>
+                  <ellipse cx="60" cy="20" rx="28" ry="16" transform="rotate(15 60 20)"/>
+                  <ellipse cx="45" cy="5" rx="26" ry="14" transform="rotate(0 45 5)"/>
+                  <ellipse cx="20" cy="30" rx="26" ry="14" transform="rotate(-30 20 30)"/>
+                  <ellipse cx="70" cy="35" rx="26" ry="14" transform="rotate(30 70 35)"/>
+                </g>
+                <!-- Camada média -->
+                <g fill="url(#roseGrad2)" opacity="0.95">
+                  <ellipse cx="40" cy="25" rx="22" ry="12" transform="rotate(-10 40 25)"/>
+                  <ellipse cx="50" cy="28" rx="22" ry="12" transform="rotate(10 50 28)"/>
+                  <ellipse cx="45" cy="20" rx="20" ry="11" transform="rotate(5 45 20)"/>
+                </g>
+                <!-- Centro -->
+                <circle cx="45" cy="25" r="8" fill="#fff5f8"/>
+                <circle cx="45" cy="25" r="5" fill="#ffe2eb"/>
+              </g>
+              <!-- Flor direita -->
+              <g transform="translate(230,130)" class="rose rose-right">
+                <g fill="url(#roseGrad)" opacity="0.9">
+                  <ellipse cx="25" cy="12" rx="22" ry="12" transform="rotate(-12 25 12)"/>
+                  <ellipse cx="47" cy="15" rx="22" ry="12" transform="rotate(12 47 15)"/>
+                  <ellipse cx="36" cy="3" rx="20" ry="11" transform="rotate(0 36 3)"/>
+                  <ellipse cx="16" cy="25" rx="20" ry="11" transform="rotate(-25 16 25)"/>
+                  <ellipse cx="56" cy="28" rx="20" ry="11" transform="rotate(25 56 28)"/>
+                </g>
+                <g fill="url(#roseGrad2)" opacity="0.95">
+                  <ellipse cx="32" cy="20" rx="18" ry="10" transform="rotate(-8 32 20)"/>
+                  <ellipse cx="40" cy="22" rx="18" ry="10" transform="rotate(8 40 22)"/>
+                </g>
+                <circle cx="36" cy="21" r="6" fill="#fff5f8"/>
+                <circle cx="36" cy="21" r="4" fill="#ffe2eb"/>
+              </g>
+              <!-- Flor esquerda -->
+              <g transform="translate(110,145)" class="rose rose-left">
+                <g fill="url(#roseGrad)" opacity="0.9">
+                  <ellipse cx="25" cy="12" rx="22" ry="12" transform="rotate(-12 25 12)"/>
+                  <ellipse cx="47" cy="15" rx="22" ry="12" transform="rotate(12 47 15)"/>
+                  <ellipse cx="36" cy="3" rx="20" ry="11" transform="rotate(0 36 3)"/>
+                  <ellipse cx="16" cy="25" rx="20" ry="11" transform="rotate(-25 16 25)"/>
+                  <ellipse cx="56" cy="28" rx="20" ry="11" transform="rotate(25 56 28)"/>
+                </g>
+                <g fill="url(#roseGrad2)" opacity="0.95">
+                  <ellipse cx="32" cy="20" rx="18" ry="10" transform="rotate(-8 32 20)"/>
+                  <ellipse cx="40" cy="22" rx="18" ry="10" transform="rotate(8 40 22)"/>
+                </g>
+                <circle cx="36" cy="21" r="6" fill="#fff5f8"/>
+                <circle cx="36" cy="21" r="4" fill="#ffe2eb"/>
+              </g>
+
+            <!-- Laço -->
+            <g class="ribbon">
+              <path d="M175 340 C195 325, 225 325, 245 340 C225 355, 195 355, 175 340 Z" fill="#9c27b0"/>
+              <ellipse cx="210" cy="340" rx="18" ry="14" fill="#7b1fa2"/>
+              <path d="M192 345 C185 360, 170 380, 162 398" stroke="#7b1fa2" stroke-width="3"/>
+              <path d="M228 345 C235 360, 250 380, 258 398" stroke="#7b1fa2" stroke-width="3"/>
+            </g>
+
+            <!-- Partículas ascendentes dentro do buquê -->
+            <g>
+              <circle class="spark" cx="210" cy="210" r="2" fill="#ffd1dc"/>
+              <circle class="spark d2" cx="195" cy="220" r="1.8" fill="#ffb3c7"/>
+              <circle class="spark d3" cx="225" cy="225" r="1.8" fill="#ffd1dc"/>
+              <circle class="spark d4" cx="240" cy="215" r="1.6" fill="#ffb3c7"/>
+              <circle class="spark d2" cx="180" cy="215" r="1.6" fill="#ffd1dc"/>
+            </g>
+          </g>
+
+          <!-- Definições de filtro para brilho -->
+          <defs>
+            <linearGradient id="roseGrad" x1="0" y1="0" x2="120" y2="60">
+              <stop offset="0%" stop-color="#ff94c2"/>
+              <stop offset="60%" stop-color="#ff5e9f"/>
+              <stop offset="100%" stop-color="#e23262"/>
+            </linearGradient>
+            <linearGradient id="roseGrad2" x1="0" y1="0" x2="100" y2="50">
+              <stop offset="0%" stop-color="#ffa8d0"/>
+              <stop offset="50%" stop-color="#ff6fa8"/>
+              <stop offset="100%" stop-color="#e84372"/>
+            </linearGradient>
+            <linearGradient id="leafGrad" x1="0" y1="0" x2="120" y2="0">
+              <stop offset="0%" stop-color="#22ffd1"/>
+              <stop offset="100%" stop-color="#14c27a"/>
+            </linearGradient>
+            <filter id="glow-red" x="-50" y="-50" width="520" height="520">
+              <feGaussianBlur stdDeviation="4" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+            <filter id="glow-green" x="-50" y="-50" width="520" height="520">
+              <feGaussianBlur stdDeviation="2" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+        </svg>
+      </section>
+
+      <section id="qa-section" class="qa hidden" aria-live="polite"></section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+  </html>
+
+
