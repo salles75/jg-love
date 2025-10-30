@@ -215,7 +215,7 @@ function renderResult() {
 
   const title = document.createElement('h2');
   title.className = 'question';
-  title.textContent = 'Parabéns, passou no teste de memória kkkk 🎉';
+  title.textContent = 'Parabéns, passou no teste kkkk 🎉';
 
   card.appendChild(title);
   qaSection.appendChild(card);
