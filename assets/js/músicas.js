@@ -30,8 +30,8 @@ const imageNames = [
   },
   {
     file: "3-sem.jpeg",
-    title: "Para Sempre Com Você",
-    link: "https://open.spotify.com/intl-pt/track/2KGv51jgAz8OTjNPyRryfq?si=e119bff8881e4b2c",
+    title: "Sem Avisar",
+    link: "https://open.spotify.com/intl-pt/track/7sYQoccAhICKPdG1DmY8Ot?si=8b4d887444fd4e13",
   },
   {
     file: "4-razoes.jpeg",
@@ -104,3 +104,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
