@@ -1,3 +1,14 @@
+// Animação de entrada suave quando a página carrega
+window.addEventListener('load', () => {
+  const gallerySection = document.querySelector('.gallery-section');
+  if (gallerySection) {
+    // Pequeno delay para garantir que a página está renderizada
+    setTimeout(() => {
+      gallerySection.classList.add('animate-in');
+    }, 100);
+  }
+});
+
 // Galeria de fotos
 const photoEl = document.getElementById('gallery-photo');
 const prevBtn = document.querySelector('.gallery-nav.prev');
@@ -20,7 +31,18 @@ for (let i = 0; i < totalPhotos; i++) {
 }
 
 function updatePhoto() {
-  photoEl.src = `../images/${currentPhoto + 1}.jpeg`;
+  // Fade out antes de trocar
+  photoEl.style.opacity = '0';
+  photoEl.style.transition = 'opacity 0.3s ease';
+  
+  setTimeout(() => {
+    photoEl.src = `../images/${currentPhoto + 1}.jpeg`;
+    // Fade in após a troca
+    setTimeout(() => {
+      photoEl.style.opacity = '1';
+    }, 50);
+  }, 300);
+  
   const indicators = document.querySelectorAll('.photo-indicator');
   indicators.forEach((el, idx) => {
     if (idx === currentPhoto) el.classList.add('active');

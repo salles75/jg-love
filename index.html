@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="theme-color" content="#0b0f14">
-    <title>Para Nós 💐</title>
+    <title>Meu Coração 💐</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
 
       <section class="bouquet-wrap" aria-label="Buquê de rosas vermelhas">
         <!-- SVG Buquê: rosas vermelhas, laço e folhas. Animação suave no conjunto -->
-        <svg class="bouquet" width="420" height="520" viewBox="0 0 420 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+        <svg class="bouquet" width="420" height="520" viewBox="0 0 420 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
           <title>Buquê de Rosas Vermelhas</title>
           <g class="bouquet-sway">
             <!-- Hastes -->
@@ -134,15 +134,15 @@
               <stop offset="0%" stop-color="#22ffd1"/>
               <stop offset="100%" stop-color="#14c27a"/>
             </linearGradient>
-            <filter id="glow-red" x="-50" y="-50" width="520" height="520">
-              <feGaussianBlur stdDeviation="4" result="blur"/>
+            <filter id="glow-red" x="-50" y="-50" width="520" height="520" color-interpolation-filters="sRGB">
+              <feGaussianBlur stdDeviation="3" result="blur"/>
               <feMerge>
                 <feMergeNode in="blur"/>
                 <feMergeNode in="SourceGraphic"/>
               </feMerge>
             </filter>
-            <filter id="glow-green" x="-50" y="-50" width="520" height="520">
-              <feGaussianBlur stdDeviation="2" result="blur"/>
+            <filter id="glow-green" x="-50" y="-50" width="520" height="520" color-interpolation-filters="sRGB">
+              <feGaussianBlur stdDeviation="1.5" result="blur"/>
               <feMerge>
                 <feMergeNode in="blur"/>
                 <feMergeNode in="SourceGraphic"/>
